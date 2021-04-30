@@ -1,0 +1,303 @@
+@font-face{
+    src: url(../fonts/Nunito-Regular.ttf);
+    font-family: Nunito-regular;
+}
+@font-face{
+    src: url(../fonts/Nunito-Bold.ttf);
+    font-family: Nunito-bold;
+}
+@font-face{
+    src: url(../fonts/Nunito-SemiBold.ttf);
+    font-family: Nunito-semi;
+}
+@font-face{
+    src: url(../fonts/Nunito-Light.ttf);
+    font-family: Nunito-light;
+}
+@font-face{
+    src: url(../fonts/Roboto-Bold.ttf);
+    font-family: Roboto-bold;
+}
+a {
+    text-decoration: none;
+}
+h1 {
+    font-family: Nunito-bold;
+    font-size: 50px;
+    line-height: 1.1;
+}
+p{
+    line-height: 1.5;
+    font-size: 16px;
+}
+* {
+    font-family:Nunito-regular;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+.header{
+    box-shadow: 0 3px 9px rgb(0 0 0 / 5%);
+    height: 90px;
+    z-index:99999;
+    background-color: #fff;
+}
+
+.header .container .logo a{
+    color:#dc4f72;
+    font-size: 30px;
+    font-weight: 600;
+    text-decoration: none;
+}
+
+.header .container .navbar .nav-link{
+    color:#000;
+    line-height: 0.5;
+    position:relative;
+}
+.header .container .navbar .dropdown a{
+    color:#000;
+    text-decoration: none;
+}
+.header .container .navbar .dropdown i{
+    border:0;
+}
+.header .container .navbar .dropdown .dropdown-menu .dropdown-item{
+    color:#000;
+    position:relative;
+}
+.header .container .navbar .nav-link::after,
+.header .container .navbar .dropdown .dropdown-menu .dropdown-item::after,
+.header .container .navbar .dropdown-toggle::after{
+    content: "";
+    display: block;
+    width: 0;
+    height: 0.1rem;
+    background-color: #dc4f72;
+    position: absolute;
+    bottom: 0;
+    left: 1rem;
+    transition: all 0.2s linear;
+}
+.header .container .navbar .dropdown .dropdown-menu .dropdown-item::after{
+    left: 1.5rem;
+}
+.header .container .navbar .nav-link:hover::after,
+.header .container .navbar .dropdown-toggle:hover::after {
+    width: 40%;
+}
+.header .container .navbar .dropdown a.dropdown-item:hover::after {
+    width: 20%;
+}
+.header .container .navbar .dropdown a:hover,
+.header .container .navbar .dropdown .dropdown-menu a:hover,
+.header .container .navbar .nav-link:hover{
+    background:transparent;
+    color: #dc4f72;
+    transition: 0.4s all;
+}
+
+.header .container .navbar a.active{
+    color:#dc4f72;
+}
+.header .container .navbar .dropdown .dropdown-toggle::after {
+    border:none;
+    left: 0.3rem !important;
+    line-height: 0.5;
+}
+.header .container .navbar .dropdown-menu{
+    margin-left:-3rem;
+}
+.header .container .navbar .dropdown-menu:before {
+    content: '';
+    width: 14px;
+    height: 14px;
+    background: #fff;
+    border: 1px solid rgba(0, 0, 0, 0.15);
+    display: block;
+    border-right: none;
+    border-bottom: none;
+    transform: translateX(-50%) rotateZ(45deg);
+    position: absolute;
+    top: -7px;
+    left: 49%;
+    z-index: 999;
+}
+
+.header .navbar .btn,
+.banner .container .content .btn{
+    border:1px solid #dc4f72;
+    font-weight: 700;   
+    color:#dc4f72;
+    font-size: 14px;
+}
+.header .navbar .btn:hover,
+.banner .container .content .btn:hover{
+    background-color: #dc4f72;
+    color:#fff;
+} 
+
+.banner{
+    background:url(/image/banner.jpg) no-repeat center center;
+    background-size:cover;
+    background-attachment: fixed;
+    position: relative;
+    padding-top:8rem;
+}
+.banner::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    right:0;
+    bottom:0;
+    background: rgba(255, 255, 255, 0.940);
+  }
+.banner .container .content {
+      z-index: 10;
+}
+.banner .container .content p{
+    font-size: 20px;
+
+}
+.banner .container .img{
+    transform: rotateX(180deg) rotateY(180deg);
+}
+.services {
+    padding: 3rem 0;
+}
+.services .container .content p:first-child{
+    font-weight: 600;
+    color:#dc4f72;
+    line-height: 0.1;
+}
+.services .container .content h1{
+    font-size: 45px;
+    margin-bottom:1rem;
+    font-weight: 300;;
+}
+.services .container .content p:last-child{
+    padding: 0 8rem;
+    margin-bottom: 2rem;
+}
+.services .container .list-item .item {
+    background-color: #F7F9FC;
+    border:0;
+    border: 1px solid #F7F9FC;
+    transition: 0.3s all;
+}
+.services .container .list-item .item:hover {
+    background-color: #ffffff;
+    border: 1px solid #eee;
+    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.09);
+    transform: translateY(-0.5rem);
+    transition: 0.3s all;
+    cursor:pointer;
+}
+
+.services .container .list-item .item h1 {
+    font-size: 25px;
+    line-height: 3;
+}
+
+.about{
+    background-color: #F7F9FC;
+    padding: 5rem 0;
+}
+.about .container .content p:first-child{
+    font-weight: 600;
+    color:#dc4f72;
+    line-height: 0.1;
+}
+
+.about .container .content h1{
+    font-size: 35px;
+    margin-bottom:1rem;
+    font-weight: 300;;
+}
+.about .container .content p:nth-child(3){
+    margin-top:1.5rem;
+    margin-bottom: 2rem;
+}
+.about .container .content .btn{
+    color:#fff;
+    background-color: #dc4f72;
+    padding: 1rem 2.5rem;
+}
+.about .container .content .btn:hover{
+    background-color:#d62f58;
+}
+.about .container .image img{
+    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.09);
+    transition: 0.3s all;
+}
+.about .container .image img:hover{
+transform: translateY(-0.5rem);
+transition: 0.3s all;
+}
+.about .container .list-item {
+    margin-top: 4rem;
+}
+.about .container .list-item .item{
+    background-color: #fff;
+    border: 1px solid #eee;
+    transition: 0.3s ease;
+    box-shadow:  1px 5px 7.5px rgba(196, 196, 196, 0.2);
+}
+.about .container .list-item .item:hover{
+    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.09);
+    transition: 0.3s ease;
+}
+
+.about .container .list-item .item h4{
+    font-weight: 700;
+    font-size: 17px;
+}
+
+.about .container .list-item span.countfect {
+    font-family: Roboto-bold;
+    color: #dc4f72;
+    font-weight: 900;
+    font-size: 50px;
+    line-height:1;
+}
+.about .container .list-item p {
+    margin-top: 1rem;
+}
+
+.about-2 {
+background:url(/image/bg.jpg) no-repeat center center;
+background-size:cover;
+background-attachment: fixed;
+position: relative;
+padding:8rem 0;
+}
+
+.about-2::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    right:0;
+    bottom:0;
+    background-image: linear-gradient(to right, #000000b7, #00000047)
+  }
+
+.about-2 .container .list-item .item h1{
+    color:#fff;
+    font-size: 30px;
+}
+
+.about-2 .container .list-item .item p {
+    color:#fff;
+    font-weight: 300;
+    margin: 2rem 0;
+}
+
+.about-2 .container .list-item .item .btn{
+    background-color: #fff;
+    color:#000;
+    padding: 1rem 2rem;
+    font-weight: 600;
+}
