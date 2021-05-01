@@ -255,7 +255,7 @@ transition: 0.3s all;
     font-size: 17px;
 }
 
-.about .container .list-item span.countfect {
+.about .container .list-item span.counter {
     font-family: Roboto-bold;
     color: #dc4f72;
     font-weight: 900;
@@ -301,3 +301,120 @@ padding:8rem 0;
     padding: 1rem 2rem;
     font-weight: 600;
 }
+.blog {
+    padding: 4rem 0;
+}
+.blog .container .content p:first-child{
+    color: #dc4f72;
+    font-weight: 900;
+    line-height: 0.1;
+}
+.blog .container .content p:last-child{
+    padding: 1rem 8rem 2rem 8rem;
+}
+.blog .container .blog-list .blog-item-1,
+.blog .container .blog-list .blog-item-2,
+.blog .container .blog-list .blog-item-3{
+    transition: 0.3s all;
+    display: block;
+    height: 100%;
+    background: #fff;
+    border: 1px solid #eee;
+    border-radius: 0.5rem;
+}
+
+.blog .container .blog-list .blog-item-1 .image,
+.blog .container .blog-list .blog-item-2 .image,
+.blog .container .blog-list .blog-item-3 .image{
+    position: relative;
+}
+.blog .container .blog-list .blog-item-1 .image img,
+.blog .container .blog-list .blog-item-2 .image img,
+.blog .container .blog-list .blog-item-3 .image img{
+    border-top-left-radius: 0.5rem;
+    border-top-right-radius: 0.5rem;
+}
+
+.blog .container .blog-list .blog-item-1 .image::before{
+    content:' 26 Jan, 2020';
+    position: absolute;
+    top:0;
+    right:0;
+    background-color: #dc4f72;
+    color: #fff;
+    padding: 1rem;
+    border-top-right-radius: 0.5rem;
+    font-weight: 600;
+}
+.blog .container .blog-list .blog-item-2 .image::before{
+    content:'15 Apr, 2020';
+    position: absolute;
+    top:0;
+    right:0;
+    background-color: #dc4f72;
+    color: #fff;
+    padding: 1rem;
+    border-top-right-radius: 0.5rem;
+    font-weight: 600;
+}
+.blog .container .blog-list .blog-item-3 .image::before{
+    content:' 25 Jun, 2020';
+    position: absolute;
+    top:0;
+    right:0;
+    background-color: #dc4f72;
+    color: #fff;
+    padding: 1rem;
+    border-top-right-radius: 0.5rem;
+    font-weight: 600;
+}
+
+.blog .container .blog-list .blog-item-1 .content h1,
+.blog .container .blog-list .blog-item-2 .content h1,
+.blog .container .blog-list .blog-item-3 .content h1{
+    font-size: 20px;
+}
+
+.blog .container .blog-list .blog-item-1 .content p:first-child{
+    font-size:14px;
+    color:#dc4f72;
+    background-color: #FCDFE4;
+    padding: 1rem;
+    border-radius: 30px;
+    width: fit-content;
+    height: fit-content;
+}
+.blog .container .blog-list .blog-item-2 .content p:first-child{
+    font-size:14px;
+    color:#13802E;
+    background-color: #CCE6CC;
+    padding: 1rem;
+    border-radius: 30px;
+    width: fit-content;
+    height: fit-content;
+}
+.blog .container .blog-list .blog-item-3 .content p:first-child{
+    font-size:14px;
+    color:#4200FF;
+    background-color: #CCCCFF;
+    padding: 1rem;
+    border-radius: 30px;
+    width: fit-content;
+    height: fit-content;
+}
+
+.blog .container .blog-list .blog-item-1 .content p:nth-child(3),
+.blog .container .blog-list .blog-item-2 .content p:nth-child(3),
+.blog .container .blog-list .blog-item-3 .content p:nth-child(3){
+    font-weight: 300;
+    line-height: 1.4;
+    border-bottom: 1px solid #eee;
+    padding-bottom: 1rem;
+    margin-bottom:1rem;
+}
+/* 
+.blog .container .blog-list .blog-item-1 .content a,
+.blog .container .blog-list .blog-item-2 .content a,
+.blog .container .blog-list .blog-item-3 .content a{
+
+} */
