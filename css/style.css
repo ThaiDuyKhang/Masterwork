@@ -315,13 +315,21 @@ padding:8rem 0;
 .blog .container .blog-list .blog-item-1,
 .blog .container .blog-list .blog-item-2,
 .blog .container .blog-list .blog-item-3{
-    transition: 0.3s all;
+    transition: 0.6s all;
     display: block;
     height: 100%;
     background: #fff;
     border: 1px solid #eee;
     border-radius: 0.5rem;
 }
+
+.blog .container .blog-list .blog-item-1:hover,
+.blog .container .blog-list .blog-item-2:hover,
+.blog .container .blog-list .blog-item-3:hover{
+    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.09);
+    transform: translateY(-0.5rem);
+    transition: 0.6s all;
+    }
 
 .blog .container .blog-list .blog-item-1 .image,
 .blog .container .blog-list .blog-item-2 .image,
@@ -331,8 +339,17 @@ padding:8rem 0;
 .blog .container .blog-list .blog-item-1 .image img,
 .blog .container .blog-list .blog-item-2 .image img,
 .blog .container .blog-list .blog-item-3 .image img{
+    filter: grayscale(100%);
     border-top-left-radius: 0.5rem;
     border-top-right-radius: 0.5rem;
+    transition: .6s all;
+}
+
+.blog .container .blog-list .blog-item-1:hover .image img,
+.blog .container .blog-list .blog-item-2:hover .image img,
+.blog .container .blog-list .blog-item-3:hover .image img{
+    filter: grayscale(0%);
+    transition: .6s all;
 }
 
 .blog .container .blog-list .blog-item-1 .image::before{
@@ -345,6 +362,7 @@ padding:8rem 0;
     padding: 1rem;
     border-top-right-radius: 0.5rem;
     font-weight: 600;
+    z-index:100;
 }
 .blog .container .blog-list .blog-item-2 .image::before{
     content:'15 Apr, 2020';
@@ -356,6 +374,7 @@ padding:8rem 0;
     padding: 1rem;
     border-top-right-radius: 0.5rem;
     font-weight: 600;
+    z-index:100;
 }
 .blog .container .blog-list .blog-item-3 .image::before{
     content:' 25 Jun, 2020';
@@ -367,54 +386,71 @@ padding:8rem 0;
     padding: 1rem;
     border-top-right-radius: 0.5rem;
     font-weight: 600;
+    z-index:100;
 }
 
-.blog .container .blog-list .blog-item-1 .content h1,
-.blog .container .blog-list .blog-item-2 .content h1,
-.blog .container .blog-list .blog-item-3 .content h1{
+.blog .container .blog-list .info h1{
     font-size: 20px;
 }
+.blog .container .blog-list .info a{
+    text-decoration: none;
+    color: #000;
+    font-weight: 700;
+}
+.blog .container .blog-list .blog-item-1:hover .info a,
+.blog .container .blog-list .blog-item-2:hover .info a,
+.blog .container .blog-list .blog-item-3:hover .info a{
+    color:#dc4f72;
+}
 
-.blog .container .blog-list .blog-item-1 .content p:first-child{
+.blog .container .blog-list .blog-item-1 .info p:first-child{
     font-size:14px;
     color:#dc4f72;
     background-color: #FCDFE4;
-    padding: 1rem;
+    padding: 0.5rem 1rem;
     border-radius: 30px;
     width: fit-content;
     height: fit-content;
 }
-.blog .container .blog-list .blog-item-2 .content p:first-child{
+.blog .container .blog-list .blog-item-2 .info p:first-child{
     font-size:14px;
     color:#13802E;
     background-color: #CCE6CC;
-    padding: 1rem;
+    padding: 0.5rem 1rem;
     border-radius: 30px;
     width: fit-content;
     height: fit-content;
 }
-.blog .container .blog-list .blog-item-3 .content p:first-child{
+.blog .container .blog-list .blog-item-3 .info p:first-child{
     font-size:14px;
     color:#4200FF;
     background-color: #CCCCFF;
-    padding: 1rem;
+    padding: 0.5rem 1rem;
     border-radius: 30px;
     width: fit-content;
     height: fit-content;
 }
 
-.blog .container .blog-list .blog-item-1 .content p:nth-child(3),
-.blog .container .blog-list .blog-item-2 .content p:nth-child(3),
-.blog .container .blog-list .blog-item-3 .content p:nth-child(3){
+.blog .container .blog-list .info p:nth-child(3){
     font-weight: 300;
     line-height: 1.4;
     border-bottom: 1px solid #eee;
     padding-bottom: 1rem;
     margin-bottom:1rem;
 }
-/* 
-.blog .container .blog-list .blog-item-1 .content a,
-.blog .container .blog-list .blog-item-2 .content a,
-.blog .container .blog-list .blog-item-3 .content a{
 
-} */
+.blog .container .blog-list .info .btn{
+    color: #dc4f72;
+    font-weight: 600;
+} 
+
+.blog .container .blog-list .info .btn i{
+    font-size: 10px;
+    transition: .2s all;
+} 
+.blog .container .blog-list .blog-item-1:hover i,
+.blog .container .blog-list .blog-item-2:hover i,
+.blog .container .blog-list .blog-item-3:hover i{
+    padding-left: .2rem;
+    transition:  .2s all;
+} 
