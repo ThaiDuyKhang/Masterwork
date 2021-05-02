@@ -36,15 +36,20 @@ p{
     margin: 0;
     padding: 0;
 }
-
-.header{
+ 
+.header {
     box-shadow: 0 3px 9px rgb(0 0 0 / 5%);
     height: 90px;
     z-index:99999;
     background-color: #fff;
+    transition: .2s all;
 }
+.nav-fixed {
+    height: 70px;
+    transition: .2s all;
+} 
 
-.header .container .logo a{
+.header .container .navbar-brand{
     color:#dc4f72;
     font-size: 30px;
     font-weight: 600;
@@ -77,8 +82,8 @@ p{
     background-color: #dc4f72;
     position: absolute;
     bottom: 0;
-    left: 1rem;
-    transition: all 0.2s linear;
+    left: 0.5rem;
+    transition: all .3s;
 }
 .header .container .navbar .dropdown .dropdown-menu .dropdown-item::after{
     left: 1.5rem;
@@ -121,7 +126,7 @@ p{
     transform: translateX(-50%) rotateZ(45deg);
     position: absolute;
     top: -7px;
-    left: 49%;
+    left: 52%;
     z-index: 999;
 }
 
@@ -454,3 +459,82 @@ padding:8rem 0;
     padding-left: .2rem;
     transition:  .2s all;
 } 
+.faq {
+    background-color: #F7F9FC;
+    padding: 5rem 0;
+}
+
+.faq .container .content p:first-child{
+    color: #dc4f72;
+    font-weight: 900;
+    line-height: 0.1;
+}
+.faq .container .content p:last-child{
+    padding: 1rem 8rem 2rem 8rem;
+}
+.faq .container .info .image{
+    position: sticky;
+    top: 80px;
+}
+.faq .container .info .image img{
+    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.09);
+    transition: 0.3s all;
+}
+.faq .container .info .image img:hover{
+    transform: translateY(-0.5rem);
+    transition: 0.3s all;
+}
+
+.faq .container .info .accordion .card .card-header .btn{
+    position: relative;
+    font-size: 20px;
+    font-weight: 400;
+}
+
+.faq .container .info .accordion .card .card-header .btn i{
+    font-size: 20px;
+    position: absolute;
+    top:0.6rem;
+    right:0;
+    transition: all .4s;
+}
+.faq .container .info .accordion .card .card-header .collapsed i{
+    transform: rotateX(180deg);
+    transition: all .4s;
+}
+
+.faq .container .info .accordion .card .card-body {
+    margin-top:-1.5rem;
+    font-size: 15px;
+}
+.faq .container .info .accordion .card .card-body {
+    margin-top:-1.5rem;
+    font-size: 15px;
+}
+
+.project .container .tab-content .content h1{
+    font-size: 30px;
+    margin-bottom: 1rem;
+}
+
+.project .container .tab-content .content .btn{
+    border-color:#dc4f72;
+    color: #dc4f72;
+    font-weight: 600;
+    font-size: 15px;
+}
+
+.project .container .tab-content .content .btn:hover{
+    border-color:#dc4f72;
+    background-color: #dc4f72;
+    color: #fff;
+}
+
+.project .container .tab-content .image img{
+    transition: 0.3s all;
+    max-width: 80%;
+}
+.project .container .tab-content .image img:hover{
+    transform: translateY(-0.5rem);
+    transition: 0.3s all;
+}
