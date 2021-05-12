@@ -30,6 +30,7 @@ p{
     line-height: 1.5;
     font-size: 16px;
 }
+
 * {
     font-family:Nunito-regular;
     box-sizing: border-box;
@@ -487,7 +488,7 @@ padding:8rem 0;
 
 .faq .container .info .accordion .card .card-header .btn{
     position: relative;
-    font-size: 20px;
+    font-size: 22px;
     font-weight: 400;
 }
 
@@ -505,16 +506,41 @@ padding:8rem 0;
 
 .faq .container .info .accordion .card .card-body {
     margin-top:-1.5rem;
-    font-size: 15px;
-}
-.faq .container .info .accordion .card .card-body {
-    margin-top:-1.5rem;
-    font-size: 15px;
+    font-size: 17px;
 }
 
+.project {
+    
+    padding: 5rem 0;
+}
+
+.project .container .content p:first-child{
+    color: #dc4f72;
+    font-weight: 900;
+    line-height: 0.1;
+}
+.project .container .content p:last-child{
+    padding: 1rem 8rem 4rem 8rem;
+}
+.project .container .nav-tabs {
+    border-bottom: .25rem solid rgb(189, 189, 189);
+}
+.project .container .nav-tabs .nav-item{
+    font-size: 30px;
+    border:0;
+    padding: 0 6.4rem 1rem 6.4rem;
+    font-weight: 600;
+    color:rgb(29, 29, 29);
+    margin-bottom: -0.25rem;
+}
+.project .container .nav-tabs .nav-item.active{
+    color:#d62f58;
+    border-bottom:0.25rem solid #d62f58;
+}
 .project .container .tab-content .content h1{
     font-size: 30px;
     margin-bottom: 1rem;
+    margin-top:1rem;
 }
 
 .project .container .tab-content .content .btn{
@@ -533,8 +559,155 @@ padding:8rem 0;
 .project .container .tab-content .image img{
     transition: 0.3s all;
     max-width: 80%;
+    margin-top: 1rem;
 }
 .project .container .tab-content .image img:hover{
     transform: translateY(-0.5rem);
     transition: 0.3s all;
+}
+
+.testimonial {
+    background-image: linear-gradient(to right, rgba(247, 249, 252, 0.77), rgba(247, 249, 252, 0.77)), 
+    url(/image/b2.jpg);
+    background-size:cover;
+    background-attachment: fixed;
+    position: relative;
+    padding:8rem 0;
+}
+    
+.testimonial{
+    padding: 5rem 0;
+}
+.owl-theme .owl-dots .owl-dot span {
+    width: 3.5rem;
+    height: .35rem;
+    border-radius: 0;
+    background-color: #fff;
+}
+.testimonial .container .owl-theme .owl-dots .owl-dot span:hover,
+.testimonial .container .owl-theme .owl-dots .owl-dot.active span {
+    background-color: #dc4f72;
+}
+.testimonial .container .content p:first-child{
+    color: #dc4f72;
+    font-weight: 900;
+    line-height: 0.1;
+}
+.testimonial .container .content p:last-child{
+    padding: 1rem 8rem 4rem 8rem;
+}
+
+.testimonial .container .owl-carousel .person{
+    background-color: #fff;
+    border-radius:8px;
+}
+.testimonial .container .owl-carousel .person .img {
+    width: 110px;
+    height: 110px;
+    display: inline-block;
+    overflow: hidden;
+    background: #f3f6f9;
+    border-radius: 50%;
+    border:  0.25rem solid #dc4f72;
+}
+.testimonial .container .owl-carousel .person .message{
+    position: relative;
+}
+.testimonial .container .owl-carousel .person .message i{
+    font-size: 30px;
+    color: #646464;
+    opacity: 0.2;
+    position: absolute;
+    top: -5px;
+    left: 5px;
+}
+.testimonial .container .owl-carousel .person .message p{
+    font-size: 19px;
+}
+.testimonial .container .owl-carousel .person .message p:nth-child(3){
+    color:#dc4f72;
+}
+.testimonial .container .owl-carousel .person .message p:nth-child(4){
+    font-size: 15px;
+    line-height:0.1;
+}
+
+.booking{
+    padding: 5rem 0;
+}
+
+.booking .container .content p{
+    padding: 1rem 8rem 2rem 8rem;
+}
+
+.booking .container .two-btn .btn-book-demo{
+    border:1px solid #dc4f72;
+    font-weight: 700;   
+    color:#dc4f72;
+    font-size: 16px;
+}
+.booking .container .two-btn .btn-get-started,
+.booking .container .two-btn .btn-book-demo:hover{
+    background-color: #dc4f72;
+    color:#fff;
+    font-size: 16px;
+    font-weight: 700; 
+} 
+.footer {
+    background-color: #F7F9FC;
+    padding: 5rem 0;
+}
+.footer .container .content ul{
+    list-style-type: none;
+}
+.footer .container .content h4 {
+    font-weight:600;
+    margin-bottom:1.5rem;
+}
+.footer .container .content ul li a{
+    color:#646464;
+    font-size: 18px;
+    line-height: 2;
+    text-decoration: none;
+}
+.footer .container .content ul li a:hover{
+    color:#dc4f72;
+}
+
+.footer .container .content .form-newsletter{
+    background-color: #fff;
+    border-radius: 8px;
+}
+.footer .container .content .form-newsletter p{
+    font-size: 20px;
+}
+.footer .container .content .form-newsletter input{
+    padding: 1rem;
+    width: 75%;
+    border-radius: 5px;
+    border:0;
+    background-color: #F7F9FC;
+    margin-bottom: 1rem;
+}
+.footer .container .content .form-newsletter input:focus{
+    border:0;
+}
+
+.footer .container .content .form-newsletter .btn-form{
+    background-color: #dc4f72;
+    color:#fff;
+    font-size: 16px;
+    font-weight: 600; 
+    border:0;
+    width: 20%;
+}
+.footer .container .copyright i{
+    color:#000;
+}
+.footer .container .copyright i:hover{
+    color:#dc4f72;
+}
+
+.footer .container .copyright p{
+    font-size: 18px;
 }
