@@ -145,7 +145,7 @@ p{
 } 
 
 .banner{
-    background:url(/image/banner.jpg) no-repeat center center;
+    background:url("../image/banner.jpg") no-repeat center center;
     background-size:cover;
     background-attachment: fixed;
     position: relative;
@@ -273,7 +273,7 @@ transition: 0.3s all;
 }
 
 .about-2 {
-background:url(/image/bg.jpg) no-repeat center center;
+background:url("../image/bg.jpg") no-repeat center center;
 background-size:cover;
 background-attachment: fixed;
 position: relative;
@@ -510,7 +510,6 @@ padding:8rem 0;
 }
 
 .project {
-    
     padding: 5rem 0;
 }
 
@@ -568,7 +567,7 @@ padding:8rem 0;
 
 .testimonial {
     background-image: linear-gradient(to right, rgba(247, 249, 252, 0.77), rgba(247, 249, 252, 0.77)), 
-    url(/image/b2.jpg);
+    url("../image/b2.jpg");
     background-size:cover;
     background-attachment: fixed;
     position: relative;
